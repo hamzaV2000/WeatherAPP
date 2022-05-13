@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="320.0" prefWidth="369.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.weatherapp.HelloController">
+   <children>
+       <ImageView fx:id="weatherIcon" fitHeight="144.0" fitWidth="149.0" layoutX="92.0" layoutY="71.0" />
+      <Label fx:id="cityLabel" layoutX="131.0" layoutY="51.0" text="Label">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label fx:id="tempLabel" layoutX="241.0" layoutY="115.0" text="18°">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Label>
+      <HBox layoutX="131.0" layoutY="242.0" spacing="10.0">
+         <children>
+            <Label fx:id="uvLabel" text="Label">
+               <font>
+                  <Font name="System Bold" />
+               </font>
+            </Label>
+            <Label fx:id="ftempLabel" text="Label">
+               <font>
+                  <Font name="System Bold" />
+               </font>
+         </Label>
+            <Label fx:id="humidityLabel" text="Label">
+               <font>
+                  <Font name="System Bold" />
+               </font>
+         </Label>
+            <Label fx:id="windLabel" text="Label">
+               <font>
+                  <Font name="System Bold" />
+               </font>
+         </Label>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      <Label fx:id="conditionLabel" layoutX="134.0" layoutY="212.0" text="Label">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="fBtn" layoutX="343.0" layoutY="128.0" mnemonicParsing="false" onAction="#changeToFehrnhight" text="C" />
+   </children>
+</AnchorPane>
